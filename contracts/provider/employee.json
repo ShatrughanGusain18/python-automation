@@ -1,0 +1,27 @@
+{
+    "provider": {
+      "name": "EmployeeService"
+    },
+    "consumer": {
+      "name": "Dashboard"
+    },
+    "interactions": [
+      {
+        "description": "Create employee",
+        "request": {
+          "method": "POST",
+          "path": "/employee",
+          "body": {"name": "Jane Doe", "role": "Developer"}
+        },
+        "response": {
+          "status": 201,
+          "headers": {"Content-Type": "application/json"},
+          "body": {"id": 2, "name": "Jane Doe", "role": "Developer"}
+        }
+      }
+      // Can add more interactions as needed
+    ],
+    "metadata": {
+      }
+  }
+  

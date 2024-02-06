@@ -1,0 +1,5 @@
+pact-python
+pytest
+unitest
+requests
+os

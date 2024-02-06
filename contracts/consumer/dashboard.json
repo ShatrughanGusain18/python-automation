@@ -1,0 +1,26 @@
+{
+    "consumer": {
+      "name": "Dashboard"
+    },
+    "provider": {
+      "name": "EmployeeService"
+    },
+    "interactions": [
+      {
+        "description": "Get employee details",
+        "request": {
+          "method": "GET",
+          "path": "/employee/1"
+        },
+        "response": {
+          "status": 200,
+          "headers": {"Content-Type": "application/json"},
+          "body": {"id": 1, "name": "John Doe", "role": "HR"}
+        }
+      }
+      // Can Add more interactions
+    ],
+    "metadata": {
+    }
+  }
+  
